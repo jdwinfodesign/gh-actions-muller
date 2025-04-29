@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Failed step
-      - echo: 'I |
+      - run:
+          echo 'I |
                will |
                fail'
       - name: Say goodby
-      - echo: 'Goodbye!'
-      - echo: 'Goodbye!'
+      - run: echo 'Goodbye!'
   
