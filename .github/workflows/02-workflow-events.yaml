@@ -1,10 +1,10 @@
 name: 02 - Workflow Events
 
-on: [pull_request, schedule, push, workflow_dispatch]
+on: push
 
 jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-     - name: Show the trigger
-       run: echo "workflow_dispatch"
+      - name: Show the trigger
+        run: echo "Triggered by a(n) ${{github.event_name}} event."
