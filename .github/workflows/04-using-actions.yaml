@@ -10,4 +10,5 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Printing Folders
-        run: ls react-app
+        run: |
+          echo pwd
