@@ -11,5 +11,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Printing Folders
         run: |
-          echo "pwd:"
-          pwd
+          echo " ${GITHUB_WORKSPACE}:"
+           GITHUB_WORKSPACE
