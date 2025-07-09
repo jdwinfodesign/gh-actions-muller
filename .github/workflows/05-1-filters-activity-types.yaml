@@ -7,9 +7,9 @@ on:
       - main
 
 jobs:
-  echo:
+  ubuntu-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo msg
+      - name: Show OS
         run: |
-          echo "Running whenever a PR is opened or synchronized AND base branch is main"
+          echo "This job is running on an Ubuntu runner.
